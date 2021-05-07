@@ -1,0 +1,106 @@
+body{
+    background-image: radial-gradient(circle, #0399e5, #077db4, #196285, #21475a, #212d33);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,p{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section.profileImgheader{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    background-image: url("img/headerIMG.JPEG");
+    background-position:0 450px;
+    
+    background-size: cover;
+
+}
+
+div.circular{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    top: 110px;
+    overflow: hidden;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+}
+
+img.profileImg{
+    width: auto;
+    height: auto;
+    transform: scale(2);
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+section.profileImgBody{
+    width: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+}
+section.profileImgBody h2{
+    margin-bottom: 0.5rem;
+}
+
+section.buttons{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.btn{
+    border-style: none;
+    width: 30%;
+    font-size: 1.2rem;
+    background-color:  #00a8fb;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+section.showInfo{
+    margin-top: 3rem;
+    width: 100%;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* display: none; */
+    transition: all 0.5s ease;
+    top: -300px;
+    position:relative;
+}
