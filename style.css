@@ -1,7 +1,9 @@
 body{
     /* background-image: linear-gradient(to right top, #b7e7ff, #95d9fe, #73caff, #4bbaff, #00aaff); */
     font-family: 'Open Sans', sans-serif;
-    background-color: #eee;
+    background: #2980b9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1,h2,h3,h4,p{
@@ -106,26 +108,70 @@ article.info{
     box-shadow: 0 0 5rem rgb(0, 0, 0, 0.2);
 }
 
-section.buttons{
-    display: flex;
-    width: 50%;
-    height: 50px;
-    justify-content: space-evenly;
+article.projects{
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    width: 100%;
     gap: 2rem;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: green; */
 }
+
+section.project{
+    flex: 45%;
+    min-height: 300px;
+    background-color: white;
+    box-shadow: 0 0 5rem rgb(0, 0, 0, 0.2);
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+img.projectImg{
+    width: 90%;
+    margin-bottom: auto;
+}
+
+article.contact{
+    margin-top: 3rem;
+    width: 100%;
+    min-height: 300px;
+    background-color: white;
+    box-shadow: 0 0 5rem rgb(0, 0, 0, 0.2);
+    display: flex;
+    padding: 3rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    
+}
+
+section.contactForm{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+article.contact h2{
+    margin-bottom: 1rem;
+}
+
+
 
 .btn{
     border-style: none;
-    width: 30%;
+    width: 100%;
+    padding: 2rem;
     font-size: 1.2rem;
     background-color:  #00a8fb;
     color: white;
-    border-radius: 10px;
     transition: all 0.5s ease;
 }
 
 .btn:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
