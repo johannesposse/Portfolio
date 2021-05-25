@@ -50,10 +50,8 @@ div.circular{
 }
 
 img.profileImg{
-    width: 230px;
-    height: 230px;
-    /* transform: scale(1); */
-    /* transform: scale(1.25); */
+    width: 210px;
+    height: 210px;
     margin-top: 0px;
     margin-right: 10px;
 }
@@ -74,7 +72,6 @@ section.profileImgBody{
     display: flex;
     flex-direction:  column;
     align-items: flex-start;
-    /* box-shadow: 0 0 5rem rgb(0, 0, 0, 0.2); */
 }
 
 section.profileContact{
@@ -113,7 +110,6 @@ section.pLanguages{
     height: 40px;
     gap: 1rem;
     box-sizing: border-box;
-    /* background-color: red; */
     justify-content: flex-start;
     margin-left: 3rem;
 }
@@ -143,7 +139,6 @@ article.projects{
     min-height: 300px;
     display: flex;
     flex-wrap: wrap;
-    /* background-color: green; */
 }
 
 section.project{
@@ -179,8 +174,6 @@ article.contact{
     box-sizing: border-box;
     flex-direction: column;
     border-radius: 3px;
-    /* align-items: center;
-    justify-content: center; */
     
 }
 
@@ -253,9 +246,6 @@ and (max-width : 1000px) {
     section.profileImgBody h2, h3{
         margin: 0;
     }
-    /* body, html{
-        width: 100%;
-    } */
 
     section.pLanguages{
         justify-content: center;
